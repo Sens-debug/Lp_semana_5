@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        //array
-
+        Scanner input = new Scanner(System.in);
     //    int[] array = new int[5];   //forma 1
 
     int [] array = {1, 2, 3, 4, 5};
@@ -49,13 +49,34 @@ public class Main {
 
     int sum2 = sum / array.length;                     // Promedio de elementos: Crea un array de enteros con 5 elementos. Calcula el promedio de todos los elementos del array.
 
-                                                                    // Contar elementos pares: Crea un array de enteros con 5 elementos. Cuenta la cantidad de elementos pares del array.
+    int cont1= 0 ;
+    
+    
+            
+    
+if (q%2==0) {cont1++;}
+if (w%2==0) {cont1++;}           // Contar elementos pares: Crea un array de enteros con 5 elementos. Cuenta la cantidad de elementos pares del array.
+if (e%2==0) {cont1++;}
+if (r%2==0) {cont1++;}
+if (t%2==0) {cont1++;
+    }                                                           
 
-                                                                    // Contar elementos impares: Crea un array de enteros con 5 elementos. Cuenta la cantidad de elementos impares del array.
 
-                                                                    // Verificar si un elemento existe: Crea un array de enteros con 5 elementos. Verifica si un elemento específico existe en el array.
 
-                                                                    // Invertir un array: Crea un array de enteros con 5 elementos. Invierte el orden de los elementos del array.
+    if (q%2!=0) {cont1++;}  
+    if (w%2!=0) {cont1++;}                      // Contar elementos impares: Crea un array de enteros con 5 elementos. Cuenta la cantidad de elementos impares del array.
+    if (e%2!=0) {cont1++;}              
+    if (r%2!=0) {cont1++;}
+    if (t%2!=0) {cont1++;}                    
+
+     
+    System.out.println("ingrese elemnto a buscar en el array -->");
+    int l =input.nextInt();
+    Arrays.binarySearch(array, l);     // Verificar si un elemento existe: Crea un array de enteros con 5 elementos. Verifica si un elemento específico existe en el array.
+
+       
+    
+    int[] array3 = new int[5];                    // Invertir un array: Crea un array de enteros con 5 elementos. Invierte el orden de los elementos del array.
        
        
        
