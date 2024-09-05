@@ -76,8 +76,14 @@ if (t%2==0) {cont1++;
 
        
     
-    int[] array3 = new int[5];                    // Invertir un array: Crea un array de enteros con 5 elementos. Invierte el orden de los elementos del array.
-       
+    int[] arrayInvertido = new int[5];                    // Invertir un array: Crea un array de enteros con 5 elementos. Invierte el orden de los elementos del array.
+       arrayInvertido[0] = array[4];
+       arrayInvertido[1] = array[3];                    //Se invirtío el array "array"
+       arrayInvertido[2] = array[2];
+       arrayInvertido[3] = array[1];
+       arrayInvertido[4] = array[0];
+
+    System.out.println(Arrays.toString(arrayInvertido));
        
        
        
